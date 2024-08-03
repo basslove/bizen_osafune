@@ -1,0 +1,8 @@
+name: Hello # workflow_name
+on: push    # event
+jobs:
+  hello:
+    runs-on: ubuntu-latest # ランナー
+    steps: # ステップ
+      - run: echo "hello, world!!" 
+      - uses: actions/checkout@v4
