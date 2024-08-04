@@ -9,5 +9,5 @@ jobs: # job-id
       - uses: actions/checkout@v4 # action実行  
       - name: Otameshi
         run: |
-         git long -l
+         git log -l
          tree -a
