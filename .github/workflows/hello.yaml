@@ -5,4 +5,4 @@ jobs: # job-id
     runs-on: ubuntu-latest # ランナー jobの実行環境
     steps: # ステップ
       - run: echo "hello, world!!"  # workflow最小単位
-      - uses: actions/checkout@v4 # action実行  
+      - uses: actions/checkout@v4 # action実行  aa
