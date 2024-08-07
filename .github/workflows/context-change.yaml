@@ -6,6 +6,8 @@ jobs:
     env:
       ACTOR: ${{ github.actor }}
       BIZEN: ${{ vars.BIZEN }}
+      PASS: ${{ secrets.SHONAI }}
     steps:
       - run: echo "${ACTOR}"
       - run: echo "${BIZEN}"
+      - run: echo "${PASS}"
