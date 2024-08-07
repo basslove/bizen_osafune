@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ACTOR: ${{ github.actor }}
-      USERNAME: ${{ vars.USERNAME }}
+      BIZEN: ${{ vars.BIZEN }}
     steps:
       - run: echo "${ACTOR}"
-      - run: echo "${USERNAME}"
+      - run: echo "${BIZEN}"
