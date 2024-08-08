@@ -14,7 +14,6 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Run static analysis
-        run: |
-          docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" rhsd/actionlint:latest
+      - run: |                                    # 静的解析の実行
+          docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" rhysd/actionlint:latest
 
